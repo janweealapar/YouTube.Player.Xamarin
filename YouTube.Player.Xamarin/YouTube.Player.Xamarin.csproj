@@ -13,6 +13,8 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Apis.YouTube.v3" Version="1.49.0.2197" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.1.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.1.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Plugin.Youtube" Version="1.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.8.0.1451" />  

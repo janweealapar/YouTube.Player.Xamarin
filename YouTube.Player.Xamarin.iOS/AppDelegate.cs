@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,6 +25,11 @@ namespace YouTube.Player.Xamarin.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            AppCenter.Start("6eff74f0-dec4-4e5a-99e7-fdac02342c9d",
+                   typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("6eff74f0-dec4-4e5a-99e7-fdac02342c9d",
+                               typeof(Analytics), typeof(Crashes));
+
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
